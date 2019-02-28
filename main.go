@@ -7,11 +7,11 @@ import (
     "net/http"
 )
 import (
-    "./models"
+    "./models",
+    "./controller"
 )
 
 func main() {
     var router = gin.Default()
-    var a models.Article = new (models.Article)
     router.Run("8088")
 }
