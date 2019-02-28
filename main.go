@@ -1,17 +1,17 @@
 package main
-
 import (
     "fmt"
     "html"
     "log"
+    "github.com/gin-gonic/gin"
     "net/http"
+)
+import (
+    "./models"
 )
 
 func main() {
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
-    })
-
-    log.Fatal(http.ListenAndServe(":8081", nil))
-
+    var router = gin.Default()
+    var a models.Article = new (models.Article)
+    router.Run("8088")
 }

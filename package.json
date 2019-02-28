@@ -1,0 +1,19 @@
+{
+  "name": "nblog-server-go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export GOPATH=/Users/apple/Documents/projects/nblog-server-go/ && go run main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yodfz/nblog-server-go.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yodfz/nblog-server-go/issues"
+  },
+  "homepage": "https://github.com/yodfz/nblog-server-go#readme"
+}
