@@ -13,6 +13,7 @@ func Sign () {
 // 系统使用token去微信换取正确信息
 func Login (ctx *gin.Context) {
 	var req models.RequestToken
+	var postUrl = "https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code"
 	if err := ctx.ShouldBindJSON(&req); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
