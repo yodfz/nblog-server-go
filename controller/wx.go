@@ -41,6 +41,9 @@ func WXLogin (ctx *gin.Context) {
 	}
 	// 持久化到数据库中
 	ctx.JSON(http.StatusOK, gin.H{"code": 200})
+	// 判断是否在库
+	// 写库
+	// 创建 jwt
 	// resultBody := string(body)
 	// request token
 }
