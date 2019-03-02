@@ -9,5 +9,5 @@ type RequestDetail struct {
 
 // 微信换取用户信息TOKEN
 type RequestToken struct {
-	token string `form:"token" json:"token" xml:"token"  binding:"required"`
+	Token string `form:"token" json:"token" xml:"token"  binding:"required"`
 }

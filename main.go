@@ -7,11 +7,12 @@ import (
     "net/http"
 )
 import (
-    "./models",
+    "./models"
     "./controller"
 )
 
 func main() {
     var router = gin.Default()
+    router.POST("/wx/login",controller.WXLogin)
     router.Run("8088")
 }

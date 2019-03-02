@@ -1,22 +1,22 @@
 package models
 
 type Article struct {
-	idx			int
+	Idx			int
 	// 标题
-	title		string
+	Title		string
 	// 缩略图
-	thumbImg	string
+	ThumbImg	string
 	// 描述
-	description string
-	url			string
+	Description string
+	Url			string
 	// 正文内容
-	content 	string
+	Content 	string
 	// 标签
-	tag			string
+	Tag			string
 	// 分类
-	category	string
+	Category	string
 	// 阅读数
-	viewCount	int
+	ViewCount	int
 	// 时间戳
-	createDate	int
+	CreateDate	int
 }
